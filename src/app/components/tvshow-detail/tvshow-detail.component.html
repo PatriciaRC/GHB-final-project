@@ -1,0 +1,27 @@
+<header>
+    <div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0%, 94%);">
+      <h2><a routerLink="/" class="home-button">📽My Movie Catalog</a></h2>
+      <app-search></app-search>
+    </div>
+  </header>
+  
+  
+  <div class="d-flex justify-content-center align-items-center vh-100 bg-image">
+    <div *ngIf="tvshow" class="card-transparent">
+      <div class="row no-gutters align-items-center">
+        <div class="col-md-4">
+          <img class="card-img-rounded" [src]="'https://image.tmdb.org/t/p/w500' + tvshow.poster_path" alt="TV Show Poster">
+        </div>
+        <div class="col-md-7">
+          <div class="card-body">
+            <h2 class="card-title">{{ tvshow.title }}</h2>
+            <p class="card-text">Original Title: {{ tvshow.original_title }}</p>
+            <p class="card-text">Release Date: {{ tvshow.release_date }}</p>
+            <p class="card-text">Votes received: {{ tvshow.vote_count }}</p>
+            <p class="card-text"><strong>Overview: {{ tvshow.overview }}</strong></p>
+            <p>Tags: {{ getGenreNames(tvshow.genres) }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

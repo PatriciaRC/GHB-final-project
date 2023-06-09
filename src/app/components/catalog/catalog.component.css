@@ -1,0 +1,36 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.card-link {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .card-link:hover {
+    text-decoration: none;
+  }
+  
+  .card {
+    transition: background-color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: #cbe5f7;
+  }
+  
+  .card-title.no-underline {
+    text-decoration: none;
+  }
+
+  .home-button {
+    color: black;
+  }
+
+  .home-button:hover {
+    color: #545454;
+  }
+
+
+  

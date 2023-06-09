@@ -1,0 +1,71 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-image {
+    width: 300px;
+    height: auto;
+}
+
+.card-img-rounded {
+    width: 300px;
+    height: auto;
+}
+
+.card-title, .card-text {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+.card {
+    margin-top:10px;
+    margin-bottom:20px;
+    border:none;
+}
+
+.card-img-rounded {
+    border-radius: 16px;
+    margin-right: 10px;
+  }
+
+  .card-body {
+    padding: 10px; 
+    opacity: 100%;
+  }
+
+  /* .bg-image {
+    background-image: url(src/assets/img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+  } No encuentro un bg que me guste :( */
+
+  .card-transparent {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px); 
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+
+  .card-transparent .card-body {
+    backdrop-filter: none; 
+    opacity: 100%;
+    color: black;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .home-button {
+    color: black;
+  }
+
+  .home-button:hover {
+    color: #545454;
+  }
+
+ 
